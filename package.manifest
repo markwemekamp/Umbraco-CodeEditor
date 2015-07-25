@@ -1,0 +1,25 @@
+{   
+    propertyEditors: [      
+        {
+            alias: "CodeEditor",
+            name: "Code editor",
+            editor: {
+                view: "~/App_Plugins/CodeEditor/codeeditor.html"
+            },
+			prevalues: {
+				fields: [
+					{
+						label: "Language",
+						description: "Language to be used",
+						key: "language",
+						view: "textstring"
+					}             
+				]
+			}
+        } 
+    ]
+    ,
+    javascript: [
+        '~/App_Plugins/CodeEditor/codeeditor.controller.js'
+    ]
+}
