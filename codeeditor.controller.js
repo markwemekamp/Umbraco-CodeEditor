@@ -2,6 +2,8 @@ angular.module("umbraco")
     .controller("CodeEditor",
 	function ($scope,assetsService) {
 
+	
+	
     assetsService.loadCss("/umbraco_client/CodeMirror/Js/Lib/codemirror.css");
     assetsService
         .load([
@@ -14,7 +16,7 @@ angular.module("umbraco")
         });
 		
 	function initializeEditor(){
-		$scope.editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+		$scope.editor = CodeMirror.fromTextArea(document.getElementById("code" + $scope.model.id), {
 			mode: $scope.model.config.language,
 			lineNumbers: true,
 			tabMode: "shift",
