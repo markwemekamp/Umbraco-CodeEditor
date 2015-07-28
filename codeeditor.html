@@ -1,9 +1,4 @@
-<div ng-controller="CodeEditor">
-	<style type="text/css">
-		.CodeMirror {
-			border: 1px solid #d9d9d9;
-			height: auto;
-		}
-    </style>
-	<textarea id="code{{model.id}}" name="code" ng-model="model.value"></textarea>
+<div ng-controller="CodeEditorController">
+    <div ng-if="isLoading">Loading...</div>
+    <code-editor ng-if="!isLoading" value="model.value" language="language"></code-editor>
 </div>

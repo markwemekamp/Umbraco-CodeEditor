@@ -20,6 +20,12 @@
     ]
     ,
     javascript: [
-        '~/App_Plugins/CodeEditor/codeeditor.controller.js'
-    ]
+        '~/App_Plugins/CodeEditor/codeeditor.controller.js',
+		'~/umbraco_client/CodeMirror/Js/Lib/codemirror.js',
+		'~/App_Plugins/CodeEditor/codeeditor.directive.js',
+		'~/umbraco_client/CodeMirror/Js/Mode/javascript/javascript.js'
+    ],
+	css: [  
+		'~/umbraco_client/CodeMirror/Js/Lib/codemirror.css'
+	]
 }
